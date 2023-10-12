@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="20dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="234dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logoye" />
+
+        <!-- Email Label -->
+        <EditText
+            android:id="@+id/input_sicil"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Sicil No"
+            android:inputType="number"
+            android:shadowColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorPrimary"
+
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/uyari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/colorAccent"
+            android:textColor="#FFFE1736"
+            android:textSize="15sp" />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/kullanici"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="Kullanıcı"
+                    android:textColor="#fcf58f"
+                    android:textColorLink="#FFE50914"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/yonetici"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Yönetici"
+
+                    android:textColor="#fcf58f"
+                    android:textColorLink="#FFE50914"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+        </LinearLayout> -->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="GİRİS YAP"
+            android:layout_height="50dp"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+
+        <!-- Password Label -->
+
+
+    </LinearLayout>
+</ScrollView>

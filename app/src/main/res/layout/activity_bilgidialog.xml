@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#f2f2f2"
+    >
+
+
+    <ImageView
+        android:id="@+id/attentionImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="7"
+        android:layout_gravity="left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tc Kimlik No :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="20dp"
+            />
+        <TextView
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soyadı :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/soyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doğum Tarihi :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/dogumTarihi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabıka Kaydı :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/sabıka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Askerlik Durumu :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/askerlik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aranma Durumu :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="20dp"/>
+        <TextView
+            android:id="@+id/araniyorMu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adı"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tamamla"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:text="Tamamla"
+            android:layout_height="50dp"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

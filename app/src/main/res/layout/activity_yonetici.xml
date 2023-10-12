@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="@drawable/back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Silme İşlemi :"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sicil No"
+                android:textSize="25sp"
+                android:textColor="#ffffff" />
+            <EditText
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/sicilNoEditText"
+                android:textAlignment="center"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:onClick="kayitSil"
+            android:text="Sil"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Ekleme İşlemi :"
+            android:textSize="30sp"
+            android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sicil No "
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <EditText
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/eklenecekSicilNoEditText"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sifre :    "
+                android:textSize="25sp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/sifreEditText"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adı :      "
+                android:textSize="25sp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/adıEditText"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soyadı  "
+                android:textSize="25sp"
+                android:textColor="#ffffff" />
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/soyadıEditText"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/silButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="kayıtEkle"
+            android:text="Ekle"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
